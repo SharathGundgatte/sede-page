@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registrationForm">
+            <!-- Your form fields here -->
+            <div>
+                <label>User name </label>
+                <input type="text" name="username" size="15" />
+            </div>
+            <div>
+                <label for="gmail">Gmail</label>
+                <input type="mail" id="mail" name="gmail" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div>
+                <label for="phoneNumber">Phone number</label>
+                <input type="tel" id="number" name="contact" required>
+            </div>
+            <div>
+                <label for="date">DOB</label>
+                <input type="date" id="date" name="DOB" required>
+            </div>
+            <div>
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="button" onclick="submitForm()">Register</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>
